@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "63293720605",
+    "project_id": "watchguard-60041",
+    "storage_bucket": "watchguard-60041.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63293720605:android:07ada1d3099acc8a8b9ef4",
+        "android_client_info": {
+          "package_name": "com.example.watchguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZHwMONKC71NLoq40ordz8-91Ehj5_-zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
