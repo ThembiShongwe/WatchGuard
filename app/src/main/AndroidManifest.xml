@@ -13,16 +13,34 @@
         android:theme="@style/Theme.WatchGuard"
         tools:targetApi="31">
         <activity
+            android:name=".FireWall"
+            android:exported="false" />
+        <activity
+            android:name=".LearningCentre"
+            android:exported="false" />
+        <activity
+            android:name=".AppUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".WifiSecurity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartScan"
+            android:exported="false" />
+        <activity
+            android:name=".FullScan"
+            android:exported="false" />
+        <activity
             android:name=".DashBoard"
             android:exported="false" />
         <activity
-            android:name=".LogIn"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LogIn"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
