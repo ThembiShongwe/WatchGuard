@@ -11,4 +11,10 @@
         <item name="cornerSize">50%</item>
     </style>
 
+    <style name="ProgressBarStyle">
+        <item name="android:indeterminateTint">#8000FF</item>
+        <item name="android:indeterminateTintMode">src_in</item>
+    </style>
+
+
 </resources>
