@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:gravity="center"
     tools:context=".FullScan"
     android:background="@color/white">
 
@@ -20,6 +21,19 @@
         android:textColor="@color/black"
         android:layout_gravity="center"/>
 
+    <!-- Circular Scan Button -->
+    <Button
+        android:id="@+id/btnStartScan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circular_button"
+        android:text="Scan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
     <!-- Progress Bar -->
     <ProgressBar
         android:id="@+id/progressBar"
@@ -29,7 +43,7 @@
         android:layout_marginTop="16dp"
         android:max="100"
         android:progress="0"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
     <!-- Scan Results List -->
     <androidx.recyclerview.widget.RecyclerView
@@ -46,6 +60,6 @@
         android:layout_height="wrap_content"
         android:text="Fix Issues"
         android:visibility="gone"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/pink"
         android:textColor="@color/white"/>
 </LinearLayout>
