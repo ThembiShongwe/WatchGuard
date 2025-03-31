@@ -13,6 +13,15 @@
     <!-- Required Feature for WiFi -->
     <uses-feature android:name="android.hardware.wifi" android:required="true"/>
 
+    <!-- Define which apps can be queried -->
+    <queries>
+        <package android:name="com.android.vending"/>  <!-- Google Play Store -->
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -24,7 +33,12 @@
         android:theme="@style/Theme.WatchGuard"
         tools:targetApi="31">
 
+        <!-- Firewall Feature -->
         <activity android:name=".FireWall" android:exported="false"/>
+        <service
+            android:name=".FirewallVPNService"
+            android:exported="false"/>
+
         <activity android:name=".LearningCentre" android:exported="false"/>
         <activity android:name=".AppUpdate" android:exported="false"/>
         <activity android:name=".WifiSecurity" android:exported="false"/>
@@ -33,8 +47,9 @@
         <activity android:name=".DashBoard" android:exported="false"/>
         <activity android:name=".MainActivity" android:exported="false"/>
         <activity android:name=".SignUp" android:exported="false"/>
+        <activity android:name=".LogIn" android:exported="false"/>
 
-        <activity android:name=".LogIn" android:exported="true">
+        <activity android:name=".SplashScreen" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
