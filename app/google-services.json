@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "63293720605",
+    "firebase_url": "https://watchguard-60041-default-rtdb.firebaseio.com",
     "project_id": "watchguard-60041",
     "storage_bucket": "watchguard-60041.firebasestorage.app"
   },

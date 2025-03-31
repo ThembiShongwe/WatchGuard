@@ -15,6 +15,9 @@
         <item name="android:indeterminateTint">#8000FF</item>
         <item name="android:indeterminateTintMode">src_in</item>
     </style>
+    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
 
 
 </resources>

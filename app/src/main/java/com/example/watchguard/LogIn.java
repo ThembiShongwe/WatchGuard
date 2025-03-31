@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -21,7 +22,12 @@ public class LogIn extends AppCompatActivity {
         emailInput = findViewById(R.id.email);
         passwordInput = findViewById(R.id.password);
         auth = FirebaseAuth.getInstance();
+
+        // 🔹 Fix: Handle "Don't have an account? Sign Up" click
+        TextView signupRedirect = findViewById(R.id.signupRedirectText);
+        signupRedirect.setOnClickListener(v -> startActivity(new Intent(this, SignUp.class)));
     }
+
 
     public void loginUser(View view) {
         String email = emailInput.getText().toString().trim();
